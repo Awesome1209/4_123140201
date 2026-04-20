@@ -1,77 +1,199 @@
-# Tugas Praktikum Minggu 3 — My Profile App (Compose Multiplatform)
+# Tugas 4 - Profile App MVVM
+**Nama:** Awi Septian Prasetyo
+**NIM:** 123140201  
+**Mata Kuliah:** Pengembangan Aplikasi Mobile  
+**Program Studi:** Teknik Informatika  
+**Institut Teknologi Sumatera**
+---
+## Deskripsi Proyek
+Project ini merupakan pengembangan dari tugas sebelumnya berupa **Profile App**, yang pada Tugas 4 diperbarui dengan menerapkan konsep **State Management** dan **MVVM (Model - View - ViewModel)** menggunakan **Compose Multiplatform**.
 
-## Deskripsi Singkat
-Proyek ini adalah aplikasi **My Profile App** menggunakan **Compose Multiplatform**. Aplikasi menampilkan halaman profil yang berisi **foto/ avatar profil berbentuk lingkaran**, **nama**, **bio/deskripsi singkat**, dan **informasi kontak** (Email, Phone, Location). Selain itu, terdapat tombol aksi dan fitur **AnimatedVisibility** untuk menampilkan/menyembunyikan detail.
+Aplikasi ini menampilkan profil pengguna dengan tampilan modern dan responsif, serta menyediakan fitur:
+- menampilkan data profil
+- mengedit nama dan bio
+- mengaktifkan atau menonaktifkan dark mode
+- mengelola UI state secara reaktif menggunakan `StateFlow`
+---
+## Screenshot
+
+Tambahkan screenshot hasil aplikasi di bawah ini:
+
+### 1. Profile View
+
+![Profile View](screenshots/profile-view.png)
+
+### 2. Edit Profile
+
+![Edit Profile](screenshots/edit-profile.png)
+
+### 3. Dark Mode
+
+![Dark Mode](screenshots/dark-mode.png)
+
+> Catatan: folder `screenshots/` bisa kamu buat sendiri di root project/repository, lalu isi dengan hasil screenshot aplikasi.
 
 ---
-## Screenshot Hasil
+## Tujuan Tugas
+Tugas ini dibuat untuk memenuhi requirement praktikum minggu 4, yaitu:
+1. Mengimplementasikan **MVVM Pattern**
+2. Membuat **ProfileViewModel** dengan **StateFlow**
+3. Menggunakan **ProfileUiState**
+4. Menerapkan **State Hoisting** pada komponen input
+5. Menambahkan fitur **Edit Profile**
+6. Menambahkan fitur **Dark Mode Toggle**
+7. Menyusun struktur project yang rapi: `ui/`, `viewmodel/`, dan `data/`
 
-<img width="2048" height="1084" alt="Tugas3" src="https://github.com/user-attachments/assets/51053983-9b23-477a-9b99-c08fd3ccc94f" />
+## Fitur Utama
+### 1. Profile View
+Menampilkan data profil pengguna berupa:
+- foto profil
+- nama
+- email
+- bio
 
-<img width="2048" height="1084" alt="Tugas3 (1)" src="https://github.com/user-attachments/assets/91aac2b5-f0c7-4df4-9d8c-f43f087b71cb" />
+### 2. Edit Profile
+Pengguna dapat:
+- mengubah nama
+- mengubah bio
+- menyimpan perubahan
+- membatalkan proses edit
 
+### 3. Dark Mode
+Pengguna dapat mengganti tema aplikasi antara:
+- Light Mode
+- Dark Mode
+
+### 4. Responsive UI
+Tampilan aplikasi dibuat responsif:
+- pada layar kecil (HP), komponen ditampilkan secara vertikal
+- pada layar lebar, layout dibagi menjadi dua kolom
 ---
-## Tujuan Praktikum
-- Memahami konsep dasar **Composable** pada Compose Multiplatform.
-- Menggunakan layout dasar (**Column, Row, Box**) untuk menyusun UI.
-- Menerapkan komponen UI Material (**Card, Text, Button, Image/Icon**).
-- Menggunakan **Modifier** untuk mengatur ukuran, padding, alignment, bentuk (shape), dan styling.
-- Membuat komponen UI yang **reusable** (minimal 3 composable function).
+## Penerapan Konsep Materi
+### State Management
+Aplikasi ini menggunakan pendekatan reactive UI, di mana perubahan state akan langsung memengaruhi tampilan UI.
 
----
+### MVVM
+Struktur aplikasi dibagi menjadi:
+- **Model / Data** → menyimpan data profil
+- **ViewModel** → mengelola UI state dan event
+- **View** → composable untuk menampilkan UI
 
-## Pemenuhan Kriteria Penugasan (Checklist)
-Berikut pemetaan kriteria tugas dengan implementasi pada project ini:
+### StateFlow
+`ProfileViewModel` menggunakan `MutableStateFlow` untuk menyimpan state, lalu diekspos sebagai `StateFlow` agar dapat diamati oleh UI.
 
-### 1) Halaman Profile
-- ✅ **Header**: foto/ avatar profil **circular** + **nama**
-- ✅ **Bio / deskripsi singkat**
-- ✅ **List informasi**: Email, Phone, Location
+### State Hoisting
+Komponen input dibuat stateless, di mana nilai state dan callback perubahan dikirim dari parent composable.
 
-### 2) Minimal 3 Composable Function Reusable
-- ✅ `MyProfileScreen()` — composable utama halaman
-- ✅ `ProfileHeader()` — header profil (avatar + nama)
-- ✅ `ProfileCard()` — card bio + tombol + detail
-- ✅ `InfoItem()` — item informasi (Email/Phone/Location)
+## Struktur Folder
+```text
+composeApp/src/commonMain/kotlin/org/example/project/
+├── data/
+│   └── Profile.kt
+├── viewmodel/
+│   ├── ProfileUiState.kt
+│   └── ProfileViewModel.kt
+├── ui/
+│   ├── components/
+│   │   ├── ProfileTopBar.kt
+│   │   ├── ProfileHeaderCard.kt
+│   │   ├── EditBannerCard.kt
+│   │   ├── ProfileSettingsCard.kt
+│   │   ├── ProfileEditorCard.kt
+│   │   └── LabeledTextField.kt
+│   ├── screens/
+│   │   └── ProfileScreen.kt
+│   └── theme/
+│       └── AppTheme.kt
+````
 
-### 3) Penggunaan Komponen & Layout (Minimal)
-- ✅ `Column`
-- ✅ `Row`
-- ✅ `Box`
-- ✅ `Card`
-- ✅ `Text`
-- ✅ `Button`
-- ✅ `Image` *(atau avatar alternatif)*
-- ✅ `Icon/Indicator` *(menggunakan emoji sebagai indikator visual jika Icons bermasalah)*
+## Penjelasan Komponen
 
-### 4) Bonus (Modifikasi/Variasi)
-- ✅ **AnimatedVisibility** untuk menampilkan/menyembunyikan detail (bio lengkap & daftar info)
+### `ProfileViewModel`
 
----
+Berfungsi untuk:
 
-## Struktur Fitur Aplikasi
-1. **ProfileHeader**
-   - Menampilkan avatar/foto berbentuk lingkaran dan nama pengguna.
-2. **ProfileCard**
-   - Menampilkan ringkasan bio, tombol toggle detail, detail info, dan tombol Contact.
-3. **InfoItem**
-   - Menampilkan label dan value untuk Email/Phone/Location.
+* menyimpan state aplikasi
+* mengelola event edit profile
+* menyimpan dark mode state
+* mengontrol mode edit
 
----
+### `ProfileUiState`
+
+Berisi state yang digunakan UI, seperti:
+
+* data profil
+* status edit
+* nilai input edit
+* status dark mode
+* pesan status
+
+### `ProfileScreen`
+
+Screen utama yang:
+
+* mengambil state dari `ProfileViewModel`
+* menampilkan layout responsif
+* meneruskan event ke ViewModel
+
+### `ProfileHeaderCard`
+
+Menampilkan foto profil, nama, email, dan bio.
+
+### `EditBannerCard`
+
+Card aksi utama untuk memulai proses edit profile.
+
+### `ProfileSettingsCard`
+
+Menampilkan informasi profil dan toggle dark mode.
+
+### `ProfileEditorCard`
+
+Form edit profil yang digunakan untuk mengubah nama dan bio.
+
+## Teknologi yang Digunakan
+
+* **Kotlin**
+* **Compose Multiplatform**
+* **Material 3**
+* **MVVM Architecture**
+* **StateFlow**
+* **Jetpack / Lifecycle ViewModel**
 
 ## Cara Menjalankan Project
 
-### Android
 1. Buka project di **Android Studio**
-2. Pilih device/emulator
-3. Klik tombol **Run (▶)**
+2. Tunggu hingga Gradle selesai sync
+3. Pilih target device / emulator
+4. Jalankan project
 
-### Desktop (Jika tersedia pada template project)
-1. Pilih konfigurasi run **Desktop**
-2. Klik tombol **Run (▶)**
+## Kelebihan Implementasi
 
----
+* UI lebih rapi dan modern
+* struktur kode lebih terorganisir
+* mudah dikembangkan
+* state lebih aman dan terpusat
+* mendukung tampilan responsif
+* dark mode sudah terintegrasi dalam UI state
 
-## Identitas
-- **Nama**: Awi Septian Prasetyo  
-- **NIM**: 123140201  
+## Kendala Selama Pengerjaan
+
+Beberapa kendala yang ditemui selama proses pengerjaan:
+
+* penyesuaian resource gambar untuk Compose Multiplatform
+* penyesuaian layout responsif tanpa `Modifier.weight(...)`
+* sinkronisasi dark mode dengan UI state
+* penyesuaian tampilan agar sesuai referensi UI namun tetap memenuhi requirement tugas
+
+## Kesimpulan
+
+Melalui tugas ini, saya mempelajari bagaimana menerapkan:
+
+* state management dalam Compose
+* recomposition
+* state hoisting
+* MVVM dengan ViewModel
+* StateFlow untuk UI state
+* penyusunan UI yang lebih reusable, maintainable, dan responsif
+
+Project ini menunjukkan bahwa penggunaan **State + ViewModel** dapat menghasilkan aplikasi dengan alur data yang lebih jelas, UI yang reaktif, serta struktur kode yang lebih baik.
