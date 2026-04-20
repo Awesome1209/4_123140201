@@ -15,27 +15,26 @@ Aplikasi ini menampilkan profil pengguna dengan tampilan modern dan responsif, s
 - mengaktifkan atau menonaktifkan dark mode
 - mengelola UI state secara reaktif menggunakan `StateFlow`
 ---
-## Screenshot
+## Video & Screenshot
 
 Tambahkan screenshot hasil aplikasi di bawah ini:
 
-### 1. Profile View Light Mode
+### Video
+https://drive.google.com/drive/folders/1_LfpLpUr39LGJHy_cD_H-1eySeB6txRK?usp=sharing
 
-!<img width="720" height="1600" alt="4-1" src="https://github.com/user-attachments/assets/f23d839e-cf64-4a81-9268-b72a8948f4a9" />)
+### 1. Profile View Light Mode
+<img width="720" height="1600" alt="4-1" src="https://github.com/user-attachments/assets/f23d839e-cf64-4a81-9268-b72a8948f4a9" />)
 
 ### 2. Edit Profile Light Mode
-
-!<img width="720" height="1600" alt="4-2" src="https://github.com/user-attachments/assets/247b8b52-a45a-48ed-a149-d32dd92d351f" />
+<img width="720" height="1600" alt="4-2" src="https://github.com/user-attachments/assets/247b8b52-a45a-48ed-a149-d32dd92d351f" />
 
 
 ### 3. Profile View Dark Mode
-
-!<img width="720" height="1600" alt="4-3" src="https://github.com/user-attachments/assets/03c38f8f-0676-474f-82a6-686b933d5336" />
+<img width="720" height="1600" alt="4-3" src="https://github.com/user-attachments/assets/03c38f8f-0676-474f-82a6-686b933d5336" />
 
 
 ### 4. Edit Profile Dark Mode
-
-!<img width="720" height="1600" alt="4-4" src="https://github.com/user-attachments/assets/630f63ae-bd4b-4dd2-995d-33099febcef7" />
+<img width="720" height="1600" alt="4-4" src="https://github.com/user-attachments/assets/630f63ae-bd4b-4dd2-995d-33099febcef7" />
 
 ---
 ## Tujuan Tugas
