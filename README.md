@@ -1,9 +1,10 @@
 # Tugas 4 - Profile App MVVM
+---
 **Nama:** Awi Septian Prasetyo
 **NIM:** 123140201  
 **Mata Kuliah:** Pengembangan Aplikasi Mobile  
 **Program Studi:** Teknik Informatika  
-**Institut Teknologi Sumatera**
+
 ---
 ## Deskripsi Proyek
 Project ini merupakan pengembangan dari tugas sebelumnya berupa **Profile App**, yang pada Tugas 4 diperbarui dengan menerapkan konsep **State Management** dan **MVVM (Model - View - ViewModel)** menggunakan **Compose Multiplatform**.
@@ -18,19 +19,23 @@ Aplikasi ini menampilkan profil pengguna dengan tampilan modern dan responsif, s
 
 Tambahkan screenshot hasil aplikasi di bawah ini:
 
-### 1. Profile View
+### 1. Profile View Light Mode
 
-![Profile View](screenshots/profile-view.png)
+!<img width="720" height="1600" alt="4-1" src="https://github.com/user-attachments/assets/f23d839e-cf64-4a81-9268-b72a8948f4a9" />)
 
-### 2. Edit Profile
+### 2. Edit Profile Light Mode
 
-![Edit Profile](screenshots/edit-profile.png)
+!<img width="720" height="1600" alt="4-2" src="https://github.com/user-attachments/assets/247b8b52-a45a-48ed-a149-d32dd92d351f" />
 
-### 3. Dark Mode
 
-![Dark Mode](screenshots/dark-mode.png)
+### 3. Profile View Dark Mode
 
-> Catatan: folder `screenshots/` bisa kamu buat sendiri di root project/repository, lalu isi dengan hasil screenshot aplikasi.
+!<img width="720" height="1600" alt="4-3" src="https://github.com/user-attachments/assets/03c38f8f-0676-474f-82a6-686b933d5336" />
+
+
+### 4. Edit Profile Dark Mode
+
+!<img width="720" height="1600" alt="4-4" src="https://github.com/user-attachments/assets/630f63ae-bd4b-4dd2-995d-33099febcef7" />
 
 ---
 ## Tujuan Tugas
