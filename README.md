@@ -33,11 +33,11 @@ Aplikasi ini menampilkan profil pengguna dengan tampilan modern dan responsif, s
 ### 🖼️ Screenshot Aplikasi
 | Profile View (Light) | Edit Profile (Light) |
 | :---: | :---: |
-| <img width="720" height="1600" alt="4-1" src="https://github.com/user-attachments/assets/f23d839e-cf64-4a81-9268-b72a8948f4a9" /> |
+| <img width="720" height="1600" alt="4-1" src="https://github.com/user-attachments/assets/f23d839e-cf64-4a81-9268-b72a8948f4a9" /> | <img width="720" height="1600" alt="4-2" src="https://github.com/user-attachments/assets/247b8b52-a45a-48ed-a149-d32dd92d351f" /> |
 
 | Profile View (Dark) | Edit Profile (Dark) |
 | :---: | :---: |
-| <img src="[https://github.com/user-attachments/assets/03c38f8f-0676-474f-82a6-686b933d5336](https://github.com/user-attachments/assets/03c38f8f-0676-474f-82a6-686b933d5336)" width="300" /> | <img src="[https://github.com/user-attachments/assets/630f63ae-bd4b-4dd2-995d-33099febcef7](https://github.com/user-attachments/assets/630f63ae-bd4b-4dd2-995d-33099febcef7)" width="300" /> |
+| <img width="720" height="1600" alt="4-3" src="https://github.com/user-attachments/assets/03c38f8f-0676-474f-82a6-686b933d5336" /> | <img width="720" height="1600" alt="4-4" src="https://github.com/user-attachments/assets/630f63ae-bd4b-4dd2-995d-33099febcef7" /> |
 
 ---
 
