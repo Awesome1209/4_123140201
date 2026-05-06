@@ -33,7 +33,7 @@ Aplikasi ini menampilkan profil pengguna dengan tampilan modern dan responsif, s
 ### 🖼️ Screenshot Aplikasi
 | Profile View (Light) | Edit Profile (Light) |
 | :---: | :---: |
-| <img src="[https://github.com/user-attachments/assets/f23d839e-cf64-4a81-9268-b72a8948f4a9](https://github.com/user-attachments/assets/f23d839e-cf64-4a81-9268-b72a8948f4a9)" width="300" /> | <img src="[https://github.com/user-attachments/assets/247b8b52-a45a-48ed-a149-d32dd92d351f](https://github.com/user-attachments/assets/247b8b52-a45a-48ed-a149-d32dd92d351f)" width="300" /> |
+| <img width="720" height="1600" alt="4-1" src="https://github.com/user-attachments/assets/f23d839e-cf64-4a81-9268-b72a8948f4a9" /> |
 
 | Profile View (Dark) | Edit Profile (Dark) |
 | :---: | :---: |
