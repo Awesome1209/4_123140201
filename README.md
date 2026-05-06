@@ -1,94 +1,88 @@
-# Tugas 4 - Profile App MVVM
----
-**Nama:** Awi Septian Prasetyo
-**NIM:** 123140201  
-**Mata Kuliah:** Pengembangan Aplikasi Mobile  
-**Program Studi:** Teknik Informatika  
+Tentu, ini versi `README.md` yang sudah dirapikan agar terlihat lebih profesional, terstruktur, dan mudah dibaca di GitHub tanpa mengubah konten aslinya.
 
 ---
-## Deskripsi Proyek
-Project ini merupakan pengembangan dari tugas sebelumnya berupa **Profile App**, yang pada Tugas 4 diperbarui dengan menerapkan konsep **State Management** dan **MVVM (Model - View - ViewModel)** menggunakan **Compose Multiplatform**.
+
+# Tugas 4 - Profile App MVVM 📱
+
+Repositori ini berisi pengembangan aplikasi profil menggunakan **Compose Multiplatform** dengan penerapan arsitektur **MVVM (Model-View-ViewModel)** dan **State Management** yang reaktif.
+
+---
+
+## 👤 Identitas Mahasiswa
+| Data | Keterangan |
+| :--- | :--- |
+| **Nama** | Awi Septian Prasetyo |
+| **NIM** | 123140201 |
+| **Mata Kuliah** | Pengembangan Aplikasi Mobile |
+| **Program Studi** | Teknik Informatika |
+
+---
+
+## 📝 Deskripsi Proyek
+Project ini merupakan pembaruan dari tugas sebelumnya (**Profile App**). Pada Tugas 4, fokus utama adalah implementasi **State Management** dan pola arsitektur **MVVM** menggunakan **Compose Multiplatform**. 
 
 Aplikasi ini menampilkan profil pengguna dengan tampilan modern dan responsif, serta menyediakan fitur:
-- menampilkan data profil
-- mengedit nama dan bio
-- mengaktifkan atau menonaktifkan dark mode
-- mengelola UI state secara reaktif menggunakan `StateFlow`
----
-## Video & Screenshot
-
-Tambahkan screenshot hasil aplikasi di bawah ini:
-
-### Video
-https://drive.google.com/drive/folders/1_LfpLpUr39LGJHy_cD_H-1eySeB6txRK?usp=sharing
-
-### 1. Profile View Light Mode
-<img width="720" height="1600" alt="4-1" src="https://github.com/user-attachments/assets/f23d839e-cf64-4a81-9268-b72a8948f4a9" />)
-
-### 2. Edit Profile Light Mode
-<img width="720" height="1600" alt="4-2" src="https://github.com/user-attachments/assets/247b8b52-a45a-48ed-a149-d32dd92d351f" />
-
-
-### 3. Profile View Dark Mode
-<img width="720" height="1600" alt="4-3" src="https://github.com/user-attachments/assets/03c38f8f-0676-474f-82a6-686b933d5336" />
-
-
-### 4. Edit Profile Dark Mode
-<img width="720" height="1600" alt="4-4" src="https://github.com/user-attachments/assets/630f63ae-bd4b-4dd2-995d-33099febcef7" />
+*   ✅ Menampilkan data profil secara dinamis.
+*   ✅ Fitur edit nama dan bio.
+*   ✅ Switch tema (Light/Dark Mode).
+*   ✅ Manajemen UI state secara reaktif menggunakan `StateFlow`.
 
 ---
-## Tujuan Tugas
+
+## 📸 Video & Screenshot
+
+### 🎥 Demo Video
+[Klik di sini untuk melihat video demonstrasi](https://drive.google.com/drive/folders/1_LfpLpUr39LGJHy_cD_H-1eySeB6txRK?usp=sharing)
+
+### 🖼️ Screenshot Aplikasi
+| Profile View (Light) | Edit Profile (Light) |
+| :---: | :---: |
+| <img src="[https://github.com/user-attachments/assets/f23d839e-cf64-4a81-9268-b72a8948f4a9](https://github.com/user-attachments/assets/f23d839e-cf64-4a81-9268-b72a8948f4a9)" width="300" /> | <img src="[https://github.com/user-attachments/assets/247b8b52-a45a-48ed-a149-d32dd92d351f](https://github.com/user-attachments/assets/247b8b52-a45a-48ed-a149-d32dd92d351f)" width="300" /> |
+
+| Profile View (Dark) | Edit Profile (Dark) |
+| :---: | :---: |
+| <img src="[https://github.com/user-attachments/assets/03c38f8f-0676-474f-82a6-686b933d5336](https://github.com/user-attachments/assets/03c38f8f-0676-474f-82a6-686b933d5336)" width="300" /> | <img src="[https://github.com/user-attachments/assets/630f63ae-bd4b-4dd2-995d-33099febcef7](https://github.com/user-attachments/assets/630f63ae-bd4b-4dd2-995d-33099febcef7)" width="300" /> |
+
+---
+
+## 🎯 Tujuan Tugas
 Tugas ini dibuat untuk memenuhi requirement praktikum minggu 4, yaitu:
-1. Mengimplementasikan **MVVM Pattern**
-2. Membuat **ProfileViewModel** dengan **StateFlow**
-3. Menggunakan **ProfileUiState**
-4. Menerapkan **State Hoisting** pada komponen input
-5. Menambahkan fitur **Edit Profile**
-6. Menambahkan fitur **Dark Mode Toggle**
-7. Menyusun struktur project yang rapi: `ui/`, `viewmodel/`, dan `data/`
+1.  Mengimplementasikan **MVVM Pattern**.
+2.  Membuat **ProfileViewModel** dengan **StateFlow**.
+3.  Menggunakan **ProfileUiState** untuk manajemen keadaan UI.
+4.  Menerapkan **State Hoisting** pada komponen input.
+5.  Menambahkan fitur **Edit Profile**.
+6.  Menambahkan fitur **Dark Mode Toggle**.
+7.  Menyusun struktur project yang rapi (`ui/`, `viewmodel/`, dan `data/`).
 
-## Fitur Utama
-### 1. Profile View
-Menampilkan data profil pengguna berupa:
-- foto profil
-- nama
-- email
-- bio
-
-### 2. Edit Profile
-Pengguna dapat:
-- mengubah nama
-- mengubah bio
-- menyimpan perubahan
-- membatalkan proses edit
-
-### 3. Dark Mode
-Pengguna dapat mengganti tema aplikasi antara:
-- Light Mode
-- Dark Mode
-
-### 4. Responsive UI
-Tampilan aplikasi dibuat responsif:
-- pada layar kecil (HP), komponen ditampilkan secara vertikal
-- pada layar lebar, layout dibagi menjadi dua kolom
 ---
-## Penerapan Konsep Materi
-### State Management
-Aplikasi ini menggunakan pendekatan reactive UI, di mana perubahan state akan langsung memengaruhi tampilan UI.
 
-### MVVM
-Struktur aplikasi dibagi menjadi:
-- **Model / Data** → menyimpan data profil
-- **ViewModel** → mengelola UI state dan event
-- **View** → composable untuk menampilkan UI
+## ✨ Fitur Utama
 
-### StateFlow
-`ProfileViewModel` menggunakan `MutableStateFlow` untuk menyimpan state, lalu diekspos sebagai `StateFlow` agar dapat diamati oleh UI.
+1.  **Profile View**: Menampilkan foto profil, nama, email, dan bio.
+2.  **Edit Profile**: Pengguna dapat mengubah nama & bio, serta menyimpan atau membatalkan perubahan.
+3.  **Dark Mode**: Mendukung penggantian tema aplikasi secara instan.
+4.  **Responsive UI**: Layout adaptif; satu kolom pada layar kecil (HP) dan dua kolom pada layar lebar.
 
-### State Hoisting
-Komponen input dibuat stateless, di mana nilai state dan callback perubahan dikirim dari parent composable.
+---
 
-## Struktur Folder
+## 🛠️ Penerapan Konsep Materi
+
+### 🔹 State Management
+Menggunakan pendekatan *reactive UI*, di mana perubahan *state* secara otomatis memicu pembaruan tampilan.
+
+### 🔹 MVVM Architecture
+*   **Model / Data**: Representasi data profil.
+*   **ViewModel**: Pengelola UI state dan logika bisnis/event.
+*   **View**: Composable function yang mengamati state dari ViewModel.
+
+### 🔹 StateFlow & State Hoisting
+*   **StateFlow**: Digunakan dalam `ProfileViewModel` untuk mengekspos data state yang *observable*.
+*   **State Hoisting**: Memisahkan state dari komponen input (stateless) ke parent agar lebih terkendali.
+
+---
+
+## 📁 Struktur Folder
 ```text
 composeApp/src/commonMain/kotlin/org/example/project/
 ├── data/
@@ -108,96 +102,53 @@ composeApp/src/commonMain/kotlin/org/example/project/
 │   │   └── ProfileScreen.kt
 │   └── theme/
 │       └── AppTheme.kt
-````
+```
 
-## Penjelasan Komponen
+---
 
-### `ProfileViewModel`
+## 🧩 Penjelasan Komponen
 
-Berfungsi untuk:
+*   **`ProfileViewModel`**: Pusat kendali state, event edit, dan dark mode.
+*   **`ProfileUiState`**: Data class yang menampung semua variabel state (data profil, status edit, dll).
+*   **`ProfileScreen`**: Komposisi utama yang mengatur layout responsif.
+*   **`ProfileHeaderCard`**: Komponen visual untuk identitas utama pengguna.
+*   **`EditBannerCard`**: Tombol aksi untuk masuk ke mode edit.
+*   **`ProfileSettingsCard`**: Area informasi detail dan toggle tema.
+*   **`ProfileEditorCard`**: Form input untuk pengeditan data.
 
-* menyimpan state aplikasi
-* mengelola event edit profile
-* menyimpan dark mode state
-* mengontrol mode edit
+---
 
-### `ProfileUiState`
+## 🚀 Teknologi yang Digunakan
+*   **Kotlin**
+*   **Compose Multiplatform**
+*   **Material 3**
+*   **MVVM Architecture**
+*   **StateFlow**
+*   **Jetpack / Lifecycle ViewModel**
 
-Berisi state yang digunakan UI, seperti:
+---
 
-* data profil
-* status edit
-* nilai input edit
-* status dark mode
-* pesan status
+## 💻 Cara Menjalankan Project
+1.  Buka project menggunakan **Android Studio**.
+2.  Tunggu hingga proses **Gradle Sync** selesai.
+3.  Pilih target device (Android Emulator atau Desktop).
+4.  Klik **Run**.
 
-### `ProfileScreen`
+---
 
-Screen utama yang:
+## 📈 Kelebihan & Kendala
 
-* mengambil state dari `ProfileViewModel`
-* menampilkan layout responsif
-* meneruskan event ke ViewModel
+### Kelebihan
+*   Struktur kode terorganisir dan mudah dikembangkan (*maintainable*).
+*   State lebih aman karena terpusat di ViewModel.
+*   Mendukung tampilan responsif dan integrasi Dark Mode yang mulus.
 
-### `ProfileHeaderCard`
+### Kendala
+*   Sinkronisasi resource gambar dan tema pada Compose Multiplatform.
+*   Penyesuaian layout responsif tanpa menggunakan `Modifier.weight(...)`.
+*   Menjaga tampilan tetap sesuai referensi sambil memenuhi kriteria tugas.
 
-Menampilkan foto profil, nama, email, dan bio.
+---
 
-### `EditBannerCard`
-
-Card aksi utama untuk memulai proses edit profile.
-
-### `ProfileSettingsCard`
-
-Menampilkan informasi profil dan toggle dark mode.
-
-### `ProfileEditorCard`
-
-Form edit profil yang digunakan untuk mengubah nama dan bio.
-
-## Teknologi yang Digunakan
-
-* **Kotlin**
-* **Compose Multiplatform**
-* **Material 3**
-* **MVVM Architecture**
-* **StateFlow**
-* **Jetpack / Lifecycle ViewModel**
-
-## Cara Menjalankan Project
-
-1. Buka project di **Android Studio**
-2. Tunggu hingga Gradle selesai sync
-3. Pilih target device / emulator
-4. Jalankan project
-
-## Kelebihan Implementasi
-
-* UI lebih rapi dan modern
-* struktur kode lebih terorganisir
-* mudah dikembangkan
-* state lebih aman dan terpusat
-* mendukung tampilan responsif
-* dark mode sudah terintegrasi dalam UI state
-
-## Kendala Selama Pengerjaan
-
-Beberapa kendala yang ditemui selama proses pengerjaan:
-
-* penyesuaian resource gambar untuk Compose Multiplatform
-* penyesuaian layout responsif tanpa `Modifier.weight(...)`
-* sinkronisasi dark mode dengan UI state
-* penyesuaian tampilan agar sesuai referensi UI namun tetap memenuhi requirement tugas
-
-## Kesimpulan
-
-Melalui tugas ini, saya mempelajari bagaimana menerapkan:
-
-* state management dalam Compose
-* recomposition
-* state hoisting
-* MVVM dengan ViewModel
-* StateFlow untuk UI state
-* penyusunan UI yang lebih reusable, maintainable, dan responsif
-
-Project ini menunjukkan bahwa penggunaan **State + ViewModel** dapat menghasilkan aplikasi dengan alur data yang lebih jelas, UI yang reaktif, serta struktur kode yang lebih baik.
+## 💡 Kesimpulan
+Project ini berhasil mendemonstrasikan efektivitas penggunaan **State + ViewModel** dalam menghasilkan aplikasi dengan alur data yang jelas, UI yang reaktif, dan arsitektur yang kuat pada ekosistem Compose Multiplatform.
