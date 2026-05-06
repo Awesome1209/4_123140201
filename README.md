@@ -1,7 +1,3 @@
-Tentu, ini versi `README.md` yang sudah dirapikan agar terlihat lebih profesional, terstruktur, dan mudah dibaca di GitHub tanpa mengubah konten aslinya.
-
----
-
 # Tugas 4 - Profile App MVVM 📱
 
 Repositori ini berisi pengembangan aplikasi profil menggunakan **Compose Multiplatform** dengan penerapan arsitektur **MVVM (Model-View-ViewModel)** dan **State Management** yang reaktif.
